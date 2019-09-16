@@ -1,0 +1,22 @@
+rule all:
+    input:
+        a ='in/hello.txt',
+        b = 'in/world.txt'
+    output:
+        ab = 'output/ab.txt',
+        ba = 'output/ba.txt'
+    shell:
+        '''
+        cat {input.a} > {output.ab} && \
+        cat {input.b} >> {output.ab} && \
+        cat {input.b} > {output.ba} && \
+        cat {input.a} >> {output.ba} &&
+        '''
+
+rule summary:
+    output:
+        'output/summary.tsv'
+    shell:
+        '''
+        snakemake -D all > {output}
+        '''

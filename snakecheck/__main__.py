@@ -1,0 +1,1 @@
+from snakecheck import main()
