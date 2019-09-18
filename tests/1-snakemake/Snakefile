@@ -10,7 +10,7 @@ rule all:
         cat {input.a} > {output.ab} && \
         cat {input.b} >> {output.ab} && \
         cat {input.b} > {output.ba} && \
-        cat {input.a} >> {output.ba} &&
+        cat {input.a} >> {output.ba}
         '''
 
 rule summary:

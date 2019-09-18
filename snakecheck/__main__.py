@@ -1,1 +1,1 @@
-from snakecheck import main()
+from snakecheck import cli()
