@@ -1,7 +1,8 @@
-name: 'snakecheck-dev'
+name: 'chacon-dev'
 channels:
   - defaults
   - bioconda
 dependencies:
   - python == 3.*
   - snakemake
+  - pytest

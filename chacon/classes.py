@@ -1,4 +1,3 @@
-import click
 import hashlib
 import yaml
 
@@ -82,7 +81,7 @@ class CheckedItem(object):
 
     def populate_hash(self):
         assert self.fp is not None
-        assert self.is_hashed()
+        assert not self.is_hashed()
         self.hash = self._calc_hash(self.fp)
 
     @staticmethod

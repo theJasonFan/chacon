@@ -1,1 +1,0 @@
-from snakecheck import cli()
