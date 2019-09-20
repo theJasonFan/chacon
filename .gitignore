@@ -3,3 +3,5 @@
 *.snakemake/
 .eggs/
 .vscode/
+dist/
+build/
